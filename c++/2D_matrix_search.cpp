@@ -15,7 +15,7 @@ int main()
     cout<<"Enter the number"<<endl;
     int var1;
     cin>>var1;
-    int i=0,j=0;
+    int i=0,j=y-1;
     bool flag;
     while(i<=x-1&&j<=y-1){
         if(var1>arr[i][j]){
