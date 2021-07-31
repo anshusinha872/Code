@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int saveThePrisoner(int n,int m,int s)
+int saveThePrisoner(int n,int m,int s)//
 {
     return ((m%n)+s-1)%n==0?n:((m%n)+s-1)%n;
 }
