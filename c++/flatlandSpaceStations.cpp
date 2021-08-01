@@ -19,12 +19,9 @@ int flatlandSpaceStation(int n,int m,int record[])
         min_dist=INT_MAX;
         for(int j=0;j<m;j++)
         {
-            curr_dist=abs(cities[i]-record[j]);
-            // cout<<"curr_dist "<<curr_dist<<endl;
+            curr_dist=abs(cities[i]-record[j]); //min distance from spaceStation
             min_dist=min(min_dist,curr_dist);
-            // cout<<"min dist "<<min_dist<<endl;
         }
-        // cout<<"dist "<< i<<" "<<min_dist<<endl;
         dist[i]=min_dist;
     }
     int max_dist=INT_MIN;
