@@ -30,6 +30,7 @@ class student{
             s_gender = s1.s_gender;
             mark=s1.mark;
         }
+        //member function to set values 
         void SetInfo(string s,int age,char gender,int x)
         {
             s_name=s;
@@ -37,6 +38,7 @@ class student{
             s_gender=gender;
             mark=x;
         }
+        //member function to print value
         void printInfo()
         {
             cout<<"Name : "<<s_name<<endl;
@@ -44,20 +46,25 @@ class student{
             cout<<"gender : "<<s_gender<<endl;
             cout<<"mark : "<<mark<<endl;
         }
+        //member function to set name
         void set_name(string s){
             s_name=s;
         }
+        //member function to set age
         void set_age(int a){
             *s_age = a;
         }
+        //destructor
         ~student(){
             cout<<"destructor called" <<endl;
         }
+        //operator overloading
         student operator+(student s){
             student temp;
             temp.mark = mark + s.mark;
             return temp;
         }
+        //member function to print mark
         void markPrint(){
             cout<<mark<<endl;
         }
