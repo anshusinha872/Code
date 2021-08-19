@@ -12,7 +12,7 @@ class demo{
 int main(){
     int x=0;
     if(x==0){
-        static demo obj;
+        demo obj;
     }
     cout<<"main function ends"<<endl;
     return 0;

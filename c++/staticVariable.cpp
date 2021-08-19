@@ -9,9 +9,14 @@ void fun(){
 }
 class demo{
     public:
+        //static data member
         static int var2;
         void getData(){
             cout<<"var2 : "<<var2<<endl;
+        }
+        //static member function
+        static void printMSG(){
+            cout<<"hello world"<<endl;
         }
 };
 int demo::var2;
@@ -25,5 +30,7 @@ int main(){
     demo obj1;
     obj1.var2=50;
     obj1.getData();
+    //static member function is ivoked using class name and scope resolution operator 
+    demo::printMSG();
     return 0;
 }
